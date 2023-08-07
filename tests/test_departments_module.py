@@ -12,8 +12,8 @@ import os
 from datetime import datetime
 from selenium.webdriver.common.keys import Keys
 
-# sys.path.insert(0,"C:\\Users\\Kam and Judy\\magazyn\\https---github.com-90Kam-magazyn")
-sys.path.insert(0,"C:\\Users\\VRT\\Desktop\\nowy_magazyn\\https---github.com-90Kam-magazyn")
+
+sys.path.insert(0,"C:\\magazyn")
 from locators import locators
 from sites import main_page
 from credentials import credentials
@@ -78,17 +78,4 @@ class TestDepartmentsModule:
             print(driver.find_element(By.XPATH, locators.found_department).text)
 
 
-# now = datetime.now()
-
-# date = now.strftime('%Y - %m - %d')
-
-# folder_name = f"{date}"
-# os.mkdir(folder_name)
-
-# report_name = f"report.html"
-# report_path = os.path.join(folder_name, report_name)
-# with open (report_path, 'w') as f:
-#     f.write(report.html)
-
-# print(f"Folder '{folder_name}' and report file '{report_name}' have been created")
 
