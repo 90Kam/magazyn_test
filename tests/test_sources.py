@@ -10,9 +10,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import sys
 from selenium.webdriver.common.keys import Keys
 
-sys.path.insert(0,"C:\\Users\\VRT\\Desktop\\nowy_magazyn\\https---github.com-90Kam-magazyn")
-# sys.path.insert(0,"C:\\Users\\VRT\\Desktop\\magazyn")
-# sys.path.insert(0,"C:\\Users\\Kam and Judy\\magazyn\\https---github.com-90Kam-magazyn")
+sys.path.insert(0,"C:\\magazyn")
+
 from locators import locators
 from sites import main_page
 from credentials import credentials
