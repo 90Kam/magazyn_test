@@ -1,1 +1,1 @@
-main_page = "http://172.20.0.138:3000/"
+main_page = "http://main_page/"
