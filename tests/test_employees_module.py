@@ -10,9 +10,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import sys
 from selenium.webdriver.common.keys import Keys
 
-# sys.path.insert(0,"C:\\Users\\VRT\\Desktop\\magazyn")
-# sys.path.insert(0,"C:\\Users\\Kam and Judy\\magazyn\\https---github.com-90Kam-magazyn")
-sys.path.insert(0,"C:\\Users\\VRT\\Desktop\\nowy_magazyn\\https---github.com-90Kam-magazyn")
+
+sys.path.insert(0,"C:\\magazyn")
 
 from locators import locators
 from sites import main_page
@@ -55,9 +54,6 @@ def edit_employee(edited_employee_name, edited_employee_lastname):
 
         
 
-    # for letter in name.get_attribute("class"):
-    #     name.send_keys(Keys.BACKSPACE)
-    # time.sleep(1)
     
     letter2 = 0
     while letter2 < len(lastname2):
@@ -65,11 +61,7 @@ def edit_employee(edited_employee_name, edited_employee_lastname):
         letter2 = letter2 + 1
     lastname.send_keys(edited_employee_lastname)
 
-    # lastname = driver.find_element(By.NAME, locators.new_employee_lastname_input)
-    # for letter in lastname.get_attribute("class"):
-    #     lastname.send_keys(Keys.BACKSPACE)
-    # time.sleep(1)
-    # lastname.send_keys(edited_employee_lastname)
+
     driver.find_element(By.XPATH, locators.submit_edit_employee_button).click()
     
 
